@@ -16,7 +16,7 @@ def send_message_now():
     message = get_love_message()
     message = ''.join(c for c in message if ord(c) <= 0xFFFF)
     print(f"Message fetched (filtered): {message}")
-    phone_number = os.getenv("PHONE_NUMBER")  # Your girlfriend’s Romanian number
+    phone_number = os.getenv("PHONE_NUMBER")  
 
     print("Setting up Chrome...")
     session_path = os.getenv("SESSION_PATH")
